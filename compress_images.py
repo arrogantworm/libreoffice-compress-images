@@ -1,7 +1,6 @@
 import uno, tempfile, sys
 from PIL import Image
 from io import BytesIO
-import screen_io as ui
 
 
 def CompessImages80():
@@ -100,12 +99,4 @@ def CompessImages60():
             shape.dispose()
 
     return
-
-
-def GetInterpreterPath():
-    # oDoc = XSCRIPTCONTEXT.getDocument()
-    # oSheet = oDoc.CurrentController.ActiveSheet
-
-    ui.MsgBox(f'{sys.executable}', title="Interpreter path")
-
-    return
+    
